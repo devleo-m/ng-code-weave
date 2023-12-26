@@ -1,0 +1,15 @@
+.banner {
+    background-image: url('https://images.unsplash.com/photo-1556244573-c3686c0f0e78?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    max-width: 100%; /* Largura total */
+    height: 150px; /* Altura pequena */
+    background-color: #333; /* Cor de fundo */
+    display: flex; /* Flexbox para alinhar conteúdo */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    background-attachment: fixed;
+    .banner-text {
+      color: white; /* Cor do texto */
+      font-size: 1.7em; /* Tamanho da fonte */
+    }
+  }
+  
