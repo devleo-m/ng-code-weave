@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent {
-
-}
+  imageUrl: string = '../../assets/bannerNgProject.jpg';}

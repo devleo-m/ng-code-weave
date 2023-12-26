@@ -1,6 +1,10 @@
 /* menu.component.scss */
-
-.navbar {
+.container {
+  width: 100%;
+  max-width: 1200px; /* Define a largura máxima desejada para o conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,6 +12,11 @@
     background-color: #333;
     color: white;
     transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0; /* Garante que o menu comece do canto esquerdo */
+    right: 0; /* Garante que o menu vá até o canto direito */
+    z-index: 10;
 
     .logo {
         font-family: 'Arial Black', sans-serif;
