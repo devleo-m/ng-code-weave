@@ -1,9 +1,9 @@
 <!-- menu.component.html -->
 
-<header class="navbar">
+<header class="navbar" [class.expanded]="isExpanded">
     <div class="logo">
       <a href="#">
-        <img src="caminho/para/sua/logo.png" alt="Ng CodeWeave">
+        <span>Ng CodeWeave</span>
       </a>
     </div>
     <nav class="navbar-menu">
@@ -12,11 +12,12 @@
         <li><a routerLink="/cursos">Cursos</a></li>
         <li><a routerLink="/projetos">Projetos</a></li>
         <li><a routerLink="/blog">Blog</a></li>
+        <li><a routerLink="/blog">FAQ</a></li>
       </ul>
     </nav>
     <div class="buttons">
       <a routerLink="/login" class="btn">Login</a>
       <a routerLink="/registrar" class="btn btn-primary">Registrar</a>
     </div>
-  </header>
+</header>
   

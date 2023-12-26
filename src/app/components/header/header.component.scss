@@ -7,10 +7,51 @@
     padding: 20px;
     background-color: #333;
     color: white;
-  
-    .logo img {
-      width: 120px;
-      height: auto;
+    transition: all 0.3s ease;
+
+    .logo {
+        font-family: 'Arial Black', sans-serif;
+        font-size: 26px;
+        letter-spacing: 2px;
+        position: relative;
+    
+        a {
+          text-decoration: none;
+          color: white;
+          transition: color 0.3s ease;
+    
+          span {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s ease;
+          }
+    
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 100%;
+            height: 4px;
+            background-color: #ffd700;
+            z-index: 0;
+            transition: all 0.3s ease;
+            transform-origin: bottom center;
+            transform: scaleX(0);
+          }
+    
+          &:hover {
+            color: #ffd700;
+    
+            span {
+              transform: translateY(-3px);
+            }
+    
+            &:before {
+              transform: scaleX(1);
+            }
+          }
+        }
     }
   
     .navbar-menu ul {
@@ -56,4 +97,3 @@
       }
     }
   }
-  

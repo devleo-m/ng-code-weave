@@ -1,0 +1,62 @@
+.app-footer {
+    background-color: #1a1a1a; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 40px 20px; /* Espaçamento interno */
+    font-family: Arial, sans-serif; /* Fonte */
+  
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  
+      .footer-section {
+        text-align: center;
+        align-items: center !important; /* Centraliza verticalmente */
+        justify-content: center !important; /* Centraliza horizontalmente */
+
+        width: calc(33.333% - 60px); /* Largura das seções */
+        margin-bottom: 20px;
+        padding: 0 0px; /* Adição de padding para alinhamento */
+
+  
+        h3 {
+          font-size: 1.2em;
+          margin-bottom: 10px;
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+  
+          li {
+            margin-bottom: 8px;
+  
+            a {
+              color: #fff;
+              text-decoration: none;
+              transition: color 0.3s ease;
+  
+              &:hover {
+                color: #ffcc00; /* Cor ao passar o mouse nos links */
+              }
+            }
+          }
+        }
+      }
+  
+      .contact,
+      .legal {
+        width: calc(33.333% - 20px); /* Ajuste de largura para seções com listas */
+      }
+    }
+  
+    .footer-bottom {
+      margin-top: 40px;
+      border-top: 1px solid #fff;
+      padding-top: 20px;
+      font-size: 0.9em;
+      text-align: center;
+    }
+  }
+  
